@@ -1,0 +1,207 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://use.typekit.net/nnu6omf.css");
+
+/*Stratum and IBM Plex Font */
+
+/*
+font-family: stratum-1-web, sans-serif;
+font-weight: 200 / 300 / 400 / 500 / 700 / 900;
+font-style: normal;
+
+
+font-family: ibm-plex-sans, sans-serif;
+font-weight: 800;
+font-style: normal;
+
+*/
+:host {
+    /* ------ COLORS -------*/
+    /* Grays */
+    --White: #FFFFFF;
+    --TitaniumWhite: #fafafa;
+    --MagnesiumGrey: #f6f6f6;
+    --ChromiumGrey: #ececec;
+    --PlatinumGrey: #dcdcdc;
+    --SilverGrey: #c0c0c0;
+    --AluminiumGrey: #a6a6a6;
+    --DarkSilverGrey: #8c8c8c;
+    --NickelGrey: #747474;
+    --IronGrey: #5D5F62;
+    --AnthraciteGrey: #424242;
+    --Black: #000;
+
+    /* Brand */
+    --RubyRed: #B1051D;
+    --GarnetRed: #990016;
+    --ZirconRed: #800011;
+
+    /*Text*/
+    --text-text-primary: #161616;
+    --text-text-secondary: #525252;
+    --text-text-disabled: #a6a6a6;
+
+    /*VCR backgrounds*/
+    --bgLight: #f4f4f4;
+
+    /* ---------- MEASUREMENTS/SPACERS --------- */
+    --logo-size: 96px;
+    --logo-bottom-padding: 16px;
+    --input-icon-size: 24px;
+    --list-icon-size: 16px;
+    --button-icon-size: 16px;
+
+}
+
+/*Scrollbar*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--PlatinumGrey);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--ZirconRed);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--ZirconRed);
+}
+
+
+html,
+body {
+    min-height: 100%;
+    overflow-x: hidden;
+}
+/*Hide overflow on larger screens*/
+@media(min-height:800px){
+    html,
+    body {
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+}
+
+pre code {
+    display: block;
+    background: none;
+    white-space: pre;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    max-width: 100%;
+    min-width: 100px;
+    padding: 16px;
+    background-color: var(--ChromiumGrey);
+  }
+
+
+
+.disabled {
+    color: #a6a6a6 !important;
+}
+
+.disabled>.nav-item>.vsm-nav-link:hover {
+    color: #a6a6a6 !important;
+}
+
+a.vsm-link{
+    color: var(--ZirconRed) !important;
+}
+
+.vsm-hr {
+    width: 85%;
+    color: var(--DarkSilverGrey);
+    align-self: flex-start;
+    margin-left: 8px;
+}
+
+.vsm-btn-group {
+    display: flex;
+    gap: 8px;
+}
+
+.input>img {
+    width: var(--input-icon-size) !important;
+}
+
+button>img {
+    width: var(--button-icon-size) !important;
+}
+
+p {
+    color: var(--text-text-primary);
+    font-family: ibm-plex-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+code {
+    background-color: var(--ChromiumGrey);
+    color: var(--ZirconRed) !important;
+    padding: 2px;
+    border-radius: 2px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.vsm-ul {
+    font-size: large;
+
+    ul {
+        list-style: none;
+        font-size: large;
+    }
+
+    li {
+        position: relative;
+        font-size: large;
+    }
+
+    li.folder:before {
+        position: absolute;
+        margin: 0px 0 0 -24px;
+        display: block;
+        width: var(--list-icon-size);
+        content: url("./assets/icons/Folder.svg");
+    }
+
+    li.file:before {
+        position: absolute;
+        margin: 0px 0 0 -24px;
+        display: block;
+        width: var(--list-icon-size) !important;
+        content: url("./assets/icons/File.svg");
+    }
+}
+
+
+.scrollable{
+    overflow-y: scroll;
+    height: 90%;
+    padding-right: 40px;
+    position: relative;
+    margin-right: 5%;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--PlatinumGrey);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--ZirconRed);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--ZirconRed);
+}
+
